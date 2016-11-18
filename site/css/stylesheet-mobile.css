@@ -1,0 +1,26 @@
+@media only screen and (max-width:1280px) {
+    
+}
+
+@media only screen and (max-width:992px){
+} 
+
+@media only screen and (max-width:768px){
+    .navbar{
+        background-color: black;
+    }
+    
+    .navbar .nav{
+        background-color: #1d1d1d;
+        text-transform: uppercase;
+    }
+    
+    .navbar .nav li{
+        padding: 20px 0;
+    }
+    
+    #main .main-title{
+        padding: 100px 0 0 0;
+        font-size: 2.5em;
+    }
+} 
