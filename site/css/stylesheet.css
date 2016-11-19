@@ -7,21 +7,29 @@
     font: 16px;
 }
 
+/*GENERAL*/
 body{
     font-family: 'ralewaylight';
     color: white;
+    background-color: #FFF;
 }
 
 a,
 a:hover,
 a:active,
-a:select,
-button:active,
-button:select{
+a:link,
+a:visited,
+button:active{
     color: inherit;
     text-decoration: none;
+    transition: 0.4 ease;
 }
 
+/*HEADER*/
+.navbar{
+    padding: 5px 0;
+    background-color: black;
+}
 .navbar-brand img{
     width: 80px;
     padding: 0;
@@ -37,10 +45,6 @@ button:select{
 .navbar-brand img:hover{
     opacity: 1;
 }
-.navbar{
-    padding: 10px 0;
-    background-color: black;
-}
 .navbar-tr{
     background-color: transparent;
     border-bottom: 1px solid transparent;
@@ -51,18 +55,22 @@ button:select{
 .navbar .navbar-toggle:hover{
     background-color: #d6ac48;
 }
-.nav li{
+.navbar .nav li{
     border-bottom: 1px solid transparent;
     transition: 0.4s ease-in;
 }
-.nav li a{
+.nav li a,
+.collapse .nav .nav-selected a{
     color: white;
 }
-.nav li:hover{
+.nav li:hover,
+.navbar .nav .nav-selected{
     border-bottom: 1px solid #d6ac48;
 }
 
-#main{
+/*MAIN*/
+#main,
+.back-proceso{
     overflow: hidden;
     position: relative;
 }
@@ -147,4 +155,135 @@ body:hover .main{
     background-color: #d6ac48;
     color: black;
     transform: scale(1.03);
+}
+
+/*INNER*/
+.inner-main{
+    position: relative;
+    overflow: hidden;
+    background-color: lightgray;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+.inner-title{
+    border-bottom: 1px solid #d6ac48;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'ralewaybold';
+    font-size: 3em;
+}
+.inner-subtitle{
+    border-bottom: 1px solid #d6ac48;
+    text-transform: uppercase;
+    font-family: 'ralewayregular';
+    font-size: 2em;
+}
+
+/*ABOUT*/
+.about{
+    position: relative;
+    padding: 40px 0;
+    background-color: grey;
+    overflow: hidden;
+}
+.about .about-img img{
+    border: 1px solid #d6ac48;
+}
+.about .about-par{
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #d6ac48;
+}
+.about .bio-link{
+    color: #d6ac48;
+}
+.about .bio-link:hover{
+    text-decoration: line-through;
+}
+
+/*about>PROCESO*/
+.proceso{
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 4;
+    color: white;
+    overflow: hidden;
+    padding: 40px 0;
+}
+.wrap-about{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url('../img/about-proceso.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+    transition: 5s ease;
+    overflow: hidden;
+}
+.proceso .inner-subtitle{
+    color: white;
+}
+.proceso .proceso-container{
+    padding: 40px 10px 0 10px;
+}
+.proceso .proceso-container img{
+    width: 60%;
+    margin: 0 auto;
+}
+.proceso .proceso-title{
+    color: #d6ac48;
+    font-family: 'ralewayregular';
+}
+.proceso .proceso-par{
+    font-family: 'ralewaythin';
+}
+
+/*about>CONOCIMIENTOS*/
+.conocimientos{
+    padding: 40px 0;
+    background-color: red;
+}
+
+/*footer*/
+footer{
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+footer .copyright{
+    padding: 30px 0 0 0;
+    font-family: 'ralewayregular';
+}
+footer .copyright a{
+    font-family: 'ralewaythin';
+    padding: 0 2px;
+    color: #d6ac48;
+    transition: 0.4s ease;
+}
+footer .copyright a:hover{
+    text-decoration: line-through;
+    transition: 0.4s ease-in;
+}
+footer .rrss .rs-list{
+    padding: 10px 0 0 0;
+}
+footer .top{
+    padding: 10px 0 0 0;
+}
+footer .top a span{
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 1px solid #d6ac48;
+    font-size: 2em;
+    color: white;
+    transition: 0.4s ease;
+}
+footer .top a span:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-color: transparent;
+    color: #d6ac48;
 }
