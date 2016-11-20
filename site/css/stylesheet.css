@@ -19,10 +19,20 @@ a:hover,
 a:active,
 a:link,
 a:visited,
-button:active{
+button,
+button:hover,
+button:active,
+button:link,
+button:visited,{
     color: inherit;
     text-decoration: none;
     transition: 0.4 ease;
+    outline: 0;
+}
+
+.container-fluid,
+section{
+    overflow: hidden;
 }
 
 /*HEADER*/
@@ -38,9 +48,6 @@ button:active{
     overflow: hidden;
     padding-top: 8px;
     padding-bottom: 8px;
-}
-.navbar-brand img{
-    opacity: 0.8;
 }
 .navbar-brand img:hover{
     opacity: 1;
@@ -254,6 +261,14 @@ body:hover .main{
     padding: 40px 0;
     background-color: red;
 }
+.conocimientos .conoc{
+    overflow: hidden;
+    cursor: pointer;
+}
+.conocimientos img:hover{
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
 
 /*SERVICIOS*/
 .diseno,
@@ -319,13 +334,13 @@ body:hover .main{
     position: relative;
 }
 .portfolio-proj img{
-    transition: 1s ease-out;
+    transition: 2s ease-out;
 }
 .portfolio-proj:hover img{
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     transform: scale(1.1);
-    transition: 1s ease;
+    transition: 2s ease-in;
 }
 .portfolio-proj figcaption{
     position: absolute;
