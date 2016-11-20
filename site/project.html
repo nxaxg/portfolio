@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NAG Portfolio</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--fonts-->
+    <link rel="stylesheet" href="fonts/theano_raleway/stylesheet.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--site styles-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet-mobile.css">
+    <link rel="stylesheet" href="css/unslider.css">
+    <link rel="stylesheet" href="css/unslider-dots.css">
+    <!--project style-->
+    <style>
+        .wrap-project{
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: url('img/project-iceland.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            z-index: -1;
+            transition: 5s ease;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header col-lg-6">
+                   <!--icon bar-->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-clps">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--/icon bar-->
+                    <!--logo-->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo-white.png" alt="NAG" class="img-responsive" title="Home">
+                    </a>
+                    <!--/logo-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-clps navbar-right text-center">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="about.html" title="Acerca de mí">Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="servicio.html" title="Servicios que ofrezco">Servicios</a>
+                        </li>
+                        <li class="nav-selected">
+                            <a href="#" title="Portafolio de proyectos">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Contáctate conmigo">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+   </header>
+   
+   <section class="main-project">
+       <div class="wrap-project"></div>
+       <div class="project text-center col-lg-12">
+            <div class="row">
+                <h1 class="project-title col-lg-6 col-lg-offset-3">Titulo proyecto</h1>
+            </div>
+            <div class="row">
+                <div class="project-link text-center col-lg-12">
+                    <a href="#" title="Link a proyecto"><span class="fa fa-link"></span></a>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="project-tags list-inline col-lg-6 col-lg-offset-3">
+                    <li><a href="#">Html5</a></li>
+                    <li><a href="#">Css3</a></li>
+                    <li><a href="#">JS</a></li>
+                    <li><a href="#">Php</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <p class="project-date"><span class="fa fa-calendar-o"></span> Diciembre, 2000</p>
+            </div>
+       </div>
+   </section>
+   
+   <section class="project-description">
+       <div class="container-fluid col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+           <div class="title-description text-right col-lg-3 col-md-3 col-sm-12 col-xs-12">
+               <h3>Descripción:</h3>
+           </div>
+           <div class="content-description col-lg-9 col-md-9 col-sm-12 col-xs-12">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate harum, atque similique est consectetur tempore eum quaerat. Tenetur esse, provident laboriosam. Vel aut, neque odit deserunt! Qui vero eaque blanditiis.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis earum temporibus, error laboriosam iusto dolore! Impedit harum, provident deleniti! Hic consequatur, delectus dolor earum. Necessitatibus officia, sequi veniam! Quo, quidem!</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt iste explicabo dolorem earum, aliquam eaque minus quisquam cumque quis. Iusto similique eligendi quis tempore, quasi provident odit quos cum ipsum.</p>
+           </div>
+       </div>
+   </section>
+   
+   <section class="project-slider">
+       <div id="slider" class="col-lg-12">
+           <ul>
+               <li><img src="img/project-iceland.jpg" alt="" class="img-responsive"></li>
+               <li><img src="img/project-iceland.jpg" alt="" class="img-responsive"></li>
+               <li><img src="img/project-iceland.jpg" alt="" class="img-responsive"></li>
+               <li><img src="img/project-iceland.jpg" alt="" class="img-responsive"></li>
+           </ul>
+       </div>
+   </section>
+   
+   <section class="project-info">
+       <div class="wrap-pinfo"></div>
+       <div class="project-data">
+          <div class="row text-center">
+              <h2 class="inner-subtitle col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">Variables estimadas</h2>
+          </div>
+           <div class="container text-center">
+               <div class="pdata col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                   <h4>10 días</h4>
+               </div>
+               <div class="pdata col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <h4>100hrs.</h4>
+               </div>
+               <div class="pdata col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <h4>$100.000</h4>
+               </div>
+               <div class="pdata col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <h4>$500USD</h4>
+               </div>
+           </div>
+       </div>
+   </section>
+   
+   <footer>
+        <div class="container-fluid">
+          <div class="copyright text-left col-lg-3 col-md-3 hidden-sm hidden-xs">
+                <p>&copy;Copyright <a href="#" title="NAG">NAG</a> 2016</p>
+            </div>
+           <div class="rrss text-center col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <ul class="list-inline rs-list">
+                    <li><a href="#" class="fa fa-linkedin" title="Linkedin"></a></li>
+                    <li><a href="#" class="fa fa-github" title="Github"></a></li>
+                    <li><a href="#" class="fa fa-behance" title="Behance"></a></li>
+                </ul>
+            </div>
+            <div class="top text-right col-lg-1 col-lg-offset-2 col-md-2 col-md-offset-1 col-sm-6 col-xs-12">
+                <a href="#top" title="To the top"><span class="fa fa-angle-up"></span></a>
+            </div>
+            
+        </div>
+    </footer>
+    
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/unslider-min.js"></script>
+<script src="js/scripts.js"></script> 
+</body>
+</html>

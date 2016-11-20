@@ -233,8 +233,11 @@ body:hover .main{
     transition: 5s ease;
     overflow: hidden;
 }
+/*BACKGROUND SCALE*/
 .back-proceso:hover .wrap-about,
-.mercado:hover .wrap-mercado{
+.mercado:hover .wrap-mercado,
+.main-project:hover .wrap-project,
+.project-info:hover .wrap-pinfo{
     transform: scale(1.1);
     transition: 5s ease;
 }
@@ -321,6 +324,9 @@ body:hover .main{
     transition: 5s ease;
     overflow: hidden;
 }
+.mercado-par{
+    padding: 30px 0;
+}
 
 /*PORTFOLIO*/
 .portfolio{
@@ -371,6 +377,128 @@ body:hover .main{
 }
 .portfolio-btn .bg-btn:hover{
     color: white;
+}
+
+/*project*/
+
+.main-project{
+    position: relative;
+    overflow: hidden;
+}
+.project{
+    padding: 0;
+    height: 90vh;
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 4;
+    color: white;
+    overflow: hidden;
+    padding: 40px 0;
+}
+.project-title{
+    font-family: 'ralewaybold';
+    text-transform: uppercase;
+    font-size: 3em;
+    padding-top: 10%;
+    border-bottom: 1px solid #d6ac48;
+}
+.project-link{
+    margin: 20px 0;
+}
+.project-link a span{
+    padding: 10px 11px;
+    border-radius: 50px;
+    border: 1px solid #d6ac48;
+    font-size: 2em;
+    color: white;
+    transition: 0.4s ease;
+}
+.project-link a span:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-color: transparent;
+    color: #d6ac48;
+}
+.project-tags{
+    padding: 10px 0;
+}
+.project-tags li a{
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'ralewaylight';
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #d6ac48;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+/*solve*/
+.project-tags li a:hover{
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    transition: 0.4s ease;
+    background-color: #d6ac48;
+    color: black;
+}
+.project-date{
+    padding: 10px 0;
+    font-family: 'ralewaythin'
+}
+.project-date span{
+    color: #d6ac48;
+}
+
+.project-description{
+    padding: 30px 0;
+    color: black;
+}
+#slider{
+    padding: 0;
+}
+.project-info{
+    position: relative;
+}
+.project-data{
+    position: relative;
+    z-index: 4;
+    color: white;
+    overflow: hidden;
+    padding: 40px 0;
+    background-color: rgba(255,255,255,0.6);
+}
+.wrap-pinfo{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url(../img/servicios-tiempos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+    transition: 5s ease;
+    overflow: hidden;
+}
+.project-info h2{
+    color: black;
+}
+.project-info .container{
+    padding: 50px 0; 
+    color: black;
+}
+.pdata h4{
+    padding: 20px;
+    border: 1px solid #d6ac48;
+    cursor: pointer;
+    font-family: 'ralewaybold';
+}
+.pdata h4:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.4s ease;
+    border: 1px solid transparent;
+    color: #d6ac48;
 }
 
 /*footer*/

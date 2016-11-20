@@ -1,6 +1,7 @@
 $(document).ready(function(){
     smoothy();
     project();
+    sliderAction();
 });
 function smoothy() {
     "use strict";
@@ -24,4 +25,12 @@ function project(){
         $(this).children('figcaption').slideToggle(400);
     });
     $(".portfolio-proj figcaption").hide();
+}
+
+function sliderAction(){
+    $('#slider').unslider({
+        autoplay: true,
+        delay: 5000,
+        arrows: true
+    });
 }
