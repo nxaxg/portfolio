@@ -1,5 +1,6 @@
 $(document).ready(function(){
     smoothy();
+    project();
 });
 function smoothy() {
     "use strict";
@@ -16,4 +17,11 @@ function smoothy() {
             }
         }
     });
+}
+
+function project(){
+    $(".portfolio-proj").hover(function(){
+        $(this).children('figcaption').slideToggle(400);
+    });
+    $(".portfolio-proj figcaption").hide();
 }
