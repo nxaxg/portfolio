@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>NAG Portfolio</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!--Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--fonts-->
@@ -36,16 +37,19 @@
                 <div class="collapse navbar-collapse nav-clps navbar-right text-center">
                     <ul class="nav navbar-nav">
                         <li class="nav-selected">
-                            <a href="#" title="Acerca de mí">Acerca de</a>
+                            <a href="a" title="Acerca de mí">Acerca</a>
                         </li>
                         <li>
                             <a href="servicio.html" title="Servicios que ofrezco">Servicios</a>
                         </li>
                         <li>
-                            <a href="portfolio" title="Portafolio de proyectos">Portafolio</a>
+                            <a href="portfolio.html" title="Portafolio de proyectos">Portafolio</a>
                         </li>
                         <li>
-                            <a href="#" title="Contáctate conmigo">Contact</a>
+                            <a href="contacto.html" title="Contáctate conmigo">Contacto</a>
+                        </li>
+                        <li class="lang">
+                            <a href="#"><span class="lang-es lang-selected">Es</span> | <span class="lang-en">En</span> </a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +63,7 @@
       <div class="container-fluid">
           <div class="row text-center">
               <!--title page-->
-              <h1 class="inner-title col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">Acerca de</h1>
+              <h1 class="inner-title col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">Acerca de mi</h1>
           </div>
       </div>
    </section>
@@ -67,10 +71,10 @@
    <section class="about">
        <h2 hidden="hidden">fuckoff</h2>
        <div class="col-lg-10 col-lg-offset-1 col-md-12 col-xs-12">
-           <figure class="about-img text-center col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
+           <figure class="about-img text-center col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
                <img src="img/selfie.png" alt="Selfie" class="img-responsive img-circle">
            </figure>
-           <div class="about-par col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+           <div class="inner-par about-par col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                <p>
                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis omnis iure maiores reiciendis quibusdam natus iste quasi quam maxime accusantium, dolor ipsum modi distinctio impedit sint obcaecati nobis aut laboriosam!
                </p>
@@ -92,7 +96,7 @@
             </div>
             <div class="row proceso-container col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-xs-10 col-xs-offset-1">
                <!--figure proceso-->
-                <figure class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+                <figure class="inner-par col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
                     <img src="img/icon-analisis.png" alt="" class="img-responsive hidden-sm hidden-xs">
                     <figcaption class="text-center">
                         <h3 class="proceso-title">Análisis</h3>
@@ -100,7 +104,7 @@
                     </figcaption>
                 </figure>
                 <!--figure proceso-->
-                <figure class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+                <figure class="inner-par col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
                     <img src="img/icon-diseno.png" alt="" class="img-responsive hidden-sm hidden-xs">
                     <figcaption class="text-center">
                         <h3 class="proceso-title">Diseño</h3>
@@ -108,7 +112,7 @@
                     </figcaption>
                 </figure>
                 <!--figure proceso-->
-                <figure class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
+                <figure class="inner-par col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
                     <img src="img/icon-code.png" alt="" class="img-responsive hidden-sm hidden-xs">
                     <figcaption class="text-center">
                         <h3 class="proceso-title">Código</h3>
@@ -123,15 +127,15 @@
         <div class="container-fluid col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1">
             <div class="conoc lenguajes text-center col-lg-4 col-sm-4 col-xs-12">
                 <h3 class="conocimiento-title">Lenguajes</h3>
-                <img src="img/selfie.png" alt="" class="img-responsive">
+                <img src="img/about-proceso.jpeg" alt="" class="img-responsive">
             </div>
             <div class="conoc frameworks text-center col-lg-4 col-sm-4 col-xs-12">
                <h3 class="conocimiento-title">Frameworks</h3>
-                <img src="img/selfie.png" alt="" class="img-responsive">
+                <img src="img/about-proceso.jpeg" alt="" class="img-responsive">
             </div>
             <div class="conoc programas text-center col-lg-4 col-sm-4 col-xs-12">
                <h3 class="conocimiento-title">Programas</h3>
-                <img src="img/selfie.png" alt="" class="img-responsive">
+                <img src="img/about-proceso.jpeg" alt="" class="img-responsive">
             </div>
         </div>
     </section>

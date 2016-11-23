@@ -1,7 +1,4 @@
 @media only screen and (max-width:1280px) {
-    .navbar{
-        background-color: yellow;
-    }
     
     /*servicios*/
     .sector{
@@ -10,9 +7,6 @@
 }
 
 @media only screen and (max-width:992px){
-    .navbar{
-        background-color: orange;
-    }
     /*main*/
     #main .main-img{
         overflow: hidden;
@@ -27,6 +21,28 @@
         padding-top: 0;
     }
     
+    /*portfolio*/
+    .project-title{
+        padding-top: 20%;
+        border-bottom: 1px solid #d6ac48;
+    }
+    .project-link{
+        margin: 40px 0;
+        font-size: 1.5em;
+    }
+    .title-description{
+        text-align: center;
+    }
+    
+    /*contacto*/
+    .contacto{
+        padding: 0 0 60px 0;
+    }
+    
+    .contacto .mensaje{
+        padding-top: 0;
+    }
+    
     /*footer*/
     footer .rrss{
         text-align: left;
@@ -38,9 +54,6 @@
 } 
 
 @media only screen and (max-width:768px){
-    .navbar{
-        background-color: red;
-    }
     
     .navbar .nav{
         background-color: #1d1d1d;
@@ -54,6 +67,10 @@
     #main .main-title{
         padding: 100px 0 0 0;
         font-size: 2.5em;
+    }
+    
+    #main .rs-list{
+        padding: 20px 0;
     }
     
     /*project*/
